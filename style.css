@@ -5,3 +5,27 @@ body {
     background-color: black; /* Fondo negro */
     color: white; /* Texto blanco */
 }
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555; /* Color al pasar el ratón */
+    border-radius: 5px;
+}
