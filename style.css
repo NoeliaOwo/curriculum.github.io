@@ -29,3 +29,97 @@ body {
     background-color: #555; /* Color al pasar el ratón */
     border-radius: 5px;
 }
+
+/* Secciones */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#inicio {
+    min-height: 100vh; /* Hace que ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luna {
+    fill: #feef95;
+}
+
+.cls-6 {
+    fill: #fff;
+}
+
+.estrellas {
+    fill: #ffeb68;
+}
+
+.textoNoelia {
+    fill: #fff;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.text1 {
+    fill: #fff;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+}
+
+.text2 {
+    fill: #feef95;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+/* ANIMACION ESTRELLAS */
+@keyframes estrellasBrillan{
+    0%{
+      opacity: 0;}
+    100%{
+      opacity: 1;
+    }
+  }
+  .brilla1{
+    animation: estrellasBrillan 2s 2s infinite;
+  }
+  
+  @keyframes estrellasBrillan2{
+    0%{
+      opacity: 0;}
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .brilla2{
+    animation: estrellasBrillan2 1.5s 3s infinite;
+  }
+  
+  
+  /* ANIMACION NUBES */
+  
+  @keyframes moverNubesNoche{
+    100%{
+      transform: translateX(300px);
+    }
+  }
+  .nubes1{
+    animation: moverNubesNoche 10s 15s infinite;
+    transform: translate(-300px) scale(0.5);
+  }
+  
+  
+  @keyframes moverNubesNoche{
+    100%{
+      transform: translateX(400px) scale(0.7);
+    }
+  }
+  .nubes2{
+    animation: moverNubesNoche 50s infinite;
+    transform: translateX(-170px) scale(0.7);
+  }
