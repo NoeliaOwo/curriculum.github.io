@@ -24,39 +24,37 @@
     </header>
 
     <section id="inicio">
-        <svg id="nocheEstrellada" class="night" data-name="Capa 1" viewBox="0 0 500 270">
+        <svg id="nocheEstrellada" class="night" viewBox="0 0 500 270">
 
             <title>NigthMorning</title>
 
-
-        
             <text x="20" y="70" class="text1">Hola,</text>
             <text x="80" y="70" class="text2">Mundo </text>
-         
+
             <circle class="luna" cx="177.57" cy="185.73" r="31.93" transform="translate(110, 30)" />
-            
-        
+
+
             <!-- Nubes 2 -->
             <g id="nubes" class="nubes2" transform="translate(79 180)">
                 <path transform="translate(30 -90)" class="cls-6"
                     d="M87,267c2.45-6.71,5.89-11,12.27-11,5.81,0,9.6,2.6,11.09,7.78,1.2-8.37,8.6-16.62,16.67-17.46,8.8-.92,16.55,3.6,18.73,12.61.64-2.28,4.52-7.45,9.68-7.45,11.62,0,12.91,12.58,13.56,15.5Z" />
-        
+
                 <path transform="translate(90 150)" class="cls-6"
                     d="M394,214c-1.49-4.09-3.59-6.69-7.48-6.69-3.54,0-5.86,1.58-6.76,4.74-.74-5.11-5.25-10.13-10.17-10.65-5.37-.56-10.09,2.2-11.42,7.69-.39-1.39-2.75-4.54-5.9-4.54-7.09,0-7.88,7.67-8.27,9.45Z" />
-        
+
                 <path transform="translate(-300 80)" class="cls-6"
                     d="M394,214c-1.49-4.09-3.59-6.69-7.48-6.69-3.54,0-5.86,1.58-6.76,4.74-.74-5.11-5.25-10.13-10.17-10.65-5.37-.56-10.09,2.2-11.42,7.69-.39-1.39-2.75-4.54-5.9-4.54-7.09,0-7.88,7.67-8.27,9.45Z" />
-        
+
                 <path transform="translate(-150 240)" class="cls-6"
                     d="M278.8,133.51c-1.34-3.67-3.22-6-6.7-6-3.18,0-5.25,1.42-6.06,4.25-.66-4.57-4.71-9.08-9.11-9.54-4.81-.5-9,2-10.23,6.89-.35-1.25-2.47-4.07-5.29-4.07-6.35,0-7.06,6.87-7.41,8.47Z" />
-        
+
                 <path transform="translate(40 100)" class="cls-6"
                     d="M223,188c-1.6-4.38-3.84-7.16-8-7.16-3.8,0-6.27,1.69-7.24,5.07-.79-5.46-5.62-10.84-10.88-11.39-5.74-.6-10.79,2.35-12.22,8.22-.42-1.48-2.94-4.85-6.31-4.85-7.59,0-8.43,8.2-8.85,10.11Z" />
-        
+
                 <path transform="translate(100 -50)" class="cls-6"
                     d="M243,265c1.9-5.2,4.56-8.5,9.5-8.5,4.5,0,7.44,2,8.59,6C262,256,267.75,249.66,274,249c6.82-.72,12.81,2.79,14.5,9.76C289,257,292,253,296,253c9,0,10,9.74,10.5,12Z" />
             </g>
-        
+
             <g id="Estrellas">
                 <circle class="estrellas" cx="176.5" cy="229.5" r="0.5" />
                 <circle class="estrellas" cx="92.5" cy="238.5" r="0.5" />
@@ -70,22 +68,249 @@
                 <circle class="cls-8 brilla1" cx="374.5" cy="171.5" r="0.5" />
                 <circle class="estrellas brilla2" cx="394.5" cy="259.5" r="0.5" />
             </g>
-        
+
         </svg>
-          
+
     </section>
 
     <section id="sobre">
         <h2>Sobre Mí</h2>
         <div class="sobre-contenido">
-            <p>¡Hola! Soy Noelia Díaz Alejo Alejo, futura ingeniera informática. Actualmente sigo en la carrera, aprendiendo y
-                explorando nuevas herramientas. Desde pequeña, me ha fascinado el ámbito de la tecnología. Me sumergí en este
-                apasionante mundo hace 3 años. Desde entonces, intento mejorar cada día. Me considero una persona determinada
-                que no se rinde ante los problemas. Mi objetivo principal consiste en formar parte de una empresa que me permita
+            <p>¡Hola! Soy Noelia Díaz Alejo Alejo, futura ingeniera informática. Actualmente sigo en la carrera,
+                aprendiendo y
+                explorando nuevas herramientas. Desde pequeña, me ha fascinado el ámbito de la tecnología. Me sumergí en
+                este
+                apasionante mundo hace 3 años. Desde entonces, intento mejorar cada día. Me considero una persona
+                determinada
+                que no se rinde ante los problemas. Mi objetivo principal consiste en formar parte de una empresa que me
+                permita
                 desarrollar todo mi potencial.</p>
             <img src="ruta-imagen.jpg" alt="Foto de Noelia" class="sobre-foto">
         </div>
+        <div class="aficiones">
+            <svg class="card-aficion" viewBox="0 0 400 600">
+                <defs>
+                    <!-- Gradiente para el fondo de la tarjeta -->
+                    <radialGradient id="cardGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="#1E2130" />
+                        <stop offset="100%" stop-color="#0B0E18" />
+                    </radialGradient>
 
+                    <!-- Gradiente para el borde -->
+                    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#9B59B6">
+                            <animate attributeName="stop-color" values="#9B59B6;#8E44AD;#9B59B6" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                        <stop offset="100%" stop-color="#8E44AD">
+                            <animate attributeName="stop-color" values="#8E44AD;#9B59B6;#8E44AD" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                    </linearGradient>
+
+                    <!-- Filtro para el brillo -->
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Fondo de la tarjeta con borde animado -->
+                <rect x="10" y="10" width="380" height="580" rx="20" fill="url(#cardGradient)"
+                    stroke="url(#borderGradient)" stroke-width="2" filter="url(#glow)" />
+
+                <!-- Marco para la foto -->
+                <g transform="translate(50, 50)">
+                    <rect x="0" y="0" width="300" height="300" rx="10" fill="none" stroke="url(#borderGradient)"
+                        stroke-width="2" filter="url(#glow)" />
+
+                    <!-- Placeholder de foto -->
+                    <text x="150" y="150" font-family="Arial" font-size="18" fill="#FFFFFF" text-anchor="middle"
+                        alignment-baseline="middle">Foto</text>
+                </g>
+
+                <g>
+                    <circle cx="30" cy="30" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="350" cy="50" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="370" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="40" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite" />
+                    </circle>
+                </g>
+                <!-- Contenido con animaciones sutiles -->
+                <g fill="white">
+                    <!-- Título con brillo -->
+                    <text x="50" y="400" font-family="Arial" font-size="24" font-weight="bold"
+                        fill="#FFFFFF">Animales</text>
+
+                    <!-- Descripción -->
+                    <foreignObject x="50" y="440" width="300" height="150">
+                        <text>
+                            ¡Adoro los animales! Tengo dos mascotas, un bichón maltes llamado Terry y una ninfa llamada Mía. Algún día me gustaría adoptar algún perro más para que haga compañía a Terry. 
+                        </text>
+                    </foreignObject>
+                </g>
+            </svg>
+
+
+            <svg class="card-aficion" viewBox="0 0 400 600">
+                <defs>
+                    <!-- Gradiente para el fondo de la tarjeta -->
+                    <radialGradient id="cardGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="#1E2130" />
+                        <stop offset="100%" stop-color="#0B0E18" />
+                    </radialGradient>
+
+                    <!-- Gradiente para el borde -->
+                    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#9B59B6">
+                            <animate attributeName="stop-color" values="#9B59B6;#8E44AD;#9B59B6" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                        <stop offset="100%" stop-color="#8E44AD">
+                            <animate attributeName="stop-color" values="#8E44AD;#9B59B6;#8E44AD" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                    </linearGradient>
+
+                    <!-- Filtro para el brillo -->
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Fondo de la tarjeta con borde animado -->
+                <rect x="10" y="10" width="380" height="580" rx="20" fill="url(#cardGradient)"
+                    stroke="url(#borderGradient)" stroke-width="2" filter="url(#glow)" />
+
+                <!-- Marco para la foto -->
+                <g transform="translate(50, 50)">
+                    <rect x="0" y="0" width="300" height="300" rx="10" fill="none" stroke="url(#borderGradient)"
+                        stroke-width="2" filter="url(#glow)" />
+
+                    <!-- Placeholder de foto -->
+                    <text x="150" y="150" font-family="Arial" font-size="18" fill="#FFFFFF" text-anchor="middle"
+                        alignment-baseline="middle">Foto</text>
+                </g>
+
+                <g>
+                    <circle cx="30" cy="30" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="350" cy="50" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="370" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="40" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite" />
+                    </circle>
+                </g>
+                <!-- Contenido con animaciones sutiles -->
+                <g fill="white">
+                    <!-- Título con brillo -->
+                    <text x="50" y="400" font-family="Arial" font-size="24" font-weight="bold"
+                        fill="#FFFFFF">Aficiones</text>
+
+                    <!-- Descripción -->
+                    <foreignObject x="50" y="440" width="300" height="150">
+                        <text>
+                            Me encanta leer mangas y ver series o películas. Una de mis sagas de películas favoritas
+                            es X-Men. El primer manga que leí fue One Piece, este me lo recomendo mi prima.
+                        </text>
+                    </foreignObject>
+                </g>
+            </svg>
+
+
+            <svg class="card-aficion" viewBox="0 0 400 600">
+                <defs>
+                    <!-- Gradiente para el fondo de la tarjeta -->
+                    <radialGradient id="cardGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="#1E2130" />
+                        <stop offset="100%" stop-color="#0B0E18" />
+                    </radialGradient>
+
+                    <!-- Gradiente para el borde -->
+                    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#9B59B6">
+                            <animate attributeName="stop-color" values="#9B59B6;#8E44AD;#9B59B6" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                        <stop offset="100%" stop-color="#8E44AD">
+                            <animate attributeName="stop-color" values="#8E44AD;#9B59B6;#8E44AD" dur="6s"
+                                repeatCount="indefinite" />
+                        </stop>
+                    </linearGradient>
+
+                    <!-- Filtro para el brillo -->
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Fondo de la tarjeta con borde animado -->
+                <rect x="10" y="10" width="380" height="580" rx="20" fill="url(#cardGradient)"
+                    stroke="url(#borderGradient)" stroke-width="2" filter="url(#glow)" />
+
+                <!-- Marco para la foto -->
+                <g transform="translate(50, 50)">
+                    <rect x="0" y="0" width="300" height="300" rx="10" fill="none" stroke="url(#borderGradient)"
+                        stroke-width="2" filter="url(#glow)" />
+
+                    <!-- Placeholder de foto -->
+                    <text x="150" y="150" font-family="Arial" font-size="18" fill="#FFFFFF" text-anchor="middle"
+                        alignment-baseline="middle">Foto</text>
+                </g>
+
+                <g>
+                    <circle cx="30" cy="30" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="350" cy="50" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="370" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="40" cy="550" r="1" fill="white">
+                        <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite" />
+                    </circle>
+                </g>
+                <!-- Contenido con animaciones sutiles -->
+                <g fill="white">
+                    <!-- Título con brillo -->
+                    <text x="50" y="400" font-family="Arial" font-size="24" font-weight="bold"
+                        fill="#FFFFFF">Social</text>
+
+                    <!-- Descripción -->
+                    <foreignObject x="50" y="440" width="300" height="150">
+                        <text>
+                            Disfruto pasar el tiempo en familia o con amigos, sobretodo con mi hermana. aunque es
+                            más pequeña que yo, ella fue quien me introdujo en el mundo de la informática.
+                        </text>
+                    </foreignObject>
+                </g>
+            </svg>
+        </div>
     </section>
 
     <section id="formacion">

@@ -173,3 +173,18 @@ section {
   border-radius: 10px; /* Bordes redondeados en la imagen */
 
 }
+
+.aficiones {
+  display: flex;
+  justify-content: space-between; /* Asegura que las cartas tengan espacio entre sí */
+  flex-wrap: wrap; /* Las cartas se ajustan cuando no hay suficiente espacio horizontal */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo para cada tarjeta */
+.card-aficion {
+  flex: 1; /* Las cartas ocupan un espacio igual entre sí */
+  min-width: 280px; /* Asegura que no sean demasiado pequeñas */
+  max-width: 30%; /* Limita el tamaño máximo de las cartas al 30% del contenedor */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+}
