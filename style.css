@@ -1,128 +1,175 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  /* Fondo negro */
+  color: white;
+  /* Texto blanco */
 }
 
 /* BARRA */
 header {
-  background-color: #333; /* Color oscuro para la barra */
+  background-color: #333;
+  /* Color oscuro para la barra */
   padding: 10px 0;
 }
 
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .navbar ul li a:hover {
-    background-color: #555; /* Color al pasar el ratón */
-    border-radius: 5px;
+  background-color: #555;
+  /* Color al pasar el ratón */
+  border-radius: 5px;
 }
 
 /* Secciones */
 section {
-    padding: 50px;
-    text-align: center;
+  padding: 50px;
+  text-align: center;
 }
 
 /* INICIO */
 #inicio {
-    min-height: 100vh; /* Hace que ocupe toda la pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  /* Hace que ocupe toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .luna {
-    fill: #feef95;
-    opacity: 1; 
+  fill: #feef95;
+  opacity: 1;
 }
 
 .nubes2 .cls-6 {
-    fill: #fff;
+  fill: #fff;
 }
 
 .estrellas {
-    fill: #ffeb68;
+  fill: #ffeb68;
 }
 
 .text1 {
-    fill: #fff;
-    font-size: 24px;
-    font-family: Roboto, sans-serif;
+  fill: #fff;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
 }
 
 .text2 {
-    fill: #feef95;
-    font-size: 36px;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
+  fill: #feef95;
+  font-size: 36px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 
 /* ANIMACION ESTRELLAS */
-@keyframes estrellasBrillan{
-    0%{
-      opacity: 0;}
-    100%{
-      opacity: 1;
-    }
+@keyframes estrellasBrillan {
+  0% {
+    opacity: 0;
   }
-  .brilla1{
-    animation: estrellasBrillan 2s 2s infinite;
+
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes estrellasBrillan2{
-    0%{
-      opacity: 0;}
-    50%{
-      opacity: 0.5;
-    }
-    100%{
-      opacity: 1;
-    }
+}
+
+.brilla1 {
+  animation: estrellasBrillan 2s 2s infinite;
+}
+
+@keyframes estrellasBrillan2 {
+  0% {
+    opacity: 0;
   }
-  .brilla2{
-    animation: estrellasBrillan2 1.5s 3s infinite;
+
+  50% {
+    opacity: 0.5;
   }
-  
-  
-  /* ANIMACION NUBES */
-  
-  @keyframes moverNubesNoche{
-    100%{
-      transform: translateX(300px);
-    }
+
+  100% {
+    opacity: 1;
   }
-  .nubes1{
-    animation: moverNubesNoche 10s 15s infinite;
-    transform: translate(-300px) scale(0.5);
+}
+
+.brilla2 {
+  animation: estrellasBrillan2 1.5s 3s infinite;
+}
+
+
+/* ANIMACION NUBES */
+
+@keyframes moverNubesNoche {
+  100% {
+    transform: translateX(300px);
   }
-  
-  
-  @keyframes moverNubesNoche{
-    100%{
-      transform: translateX(400px) scale(0.7);
-    }
+}
+
+.nubes1 {
+  animation: moverNubesNoche 10s 15s infinite;
+  transform: translate(-300px) scale(0.5);
+}
+
+
+@keyframes moverNubesNoche {
+  100% {
+    transform: translateX(400px) scale(0.7);
   }
-  .nubes2{
-    animation: moverNubesNoche 50s infinite;
-    transform: translateX(-170px) scale(0.7);
-  }
+}
+
+.nubes2 {
+  animation: moverNubesNoche 50s infinite;
+  transform: translateX(-170px) scale(0.7);
+}
+
+/* SOBRE */
+
+#sobre h2 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #feef95;
+  margin-bottom: 20px;
+
+}
+
+.sobre-contenido {
+  display: flex; /* Organiza el contenido en dos columnas */
+  align-items: center; /* Alinea verticalmente el texto y la imagen */
+  gap: 100px; /* Espacio entre el texto y la imagen */
+  padding: 35px 90px;
+}
+
+/* Estilos para el texto */
+.sobre-contenido p {
+  flex: 1; /* El texto ocupa el espacio disponible */
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0; /* Elimina márgenes extra */
+}
+
+/* Estilos para la imagen */
+.sobre-contenido img {
+  width: 200px; /* Tamaño de la imagen */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados en la imagen */
+
+}
