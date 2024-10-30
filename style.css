@@ -6,6 +6,13 @@ body {
     color: white; /* Texto blanco */
 }
 
+/* BARRA */
+header {
+  background-color: #333; /* Color oscuro para la barra */
+  padding: 10px 0;
+}
+
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -36,6 +43,7 @@ section {
     text-align: center;
 }
 
+/* INICIO */
 #inicio {
     min-height: 100vh; /* Hace que ocupe toda la pantalla */
     display: flex;
@@ -45,20 +53,15 @@ section {
 
 .luna {
     fill: #feef95;
+    opacity: 1; 
 }
 
-.cls-6 {
+.nubes2 .cls-6 {
     fill: #fff;
 }
 
 .estrellas {
     fill: #ffeb68;
-}
-
-.textoNoelia {
-    fill: #fff;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .text1 {
