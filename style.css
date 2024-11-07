@@ -153,6 +153,7 @@ h2 {
 
 .sobre-contenido {
   display: flex;
+  
   /* Organiza el contenido en dos columnas */
   align-items: center;
   /* Alinea verticalmente el texto y la imagen */
@@ -163,12 +164,10 @@ h2 {
 
 /* Estilos para el texto */
 .sobre-contenido p {
-  flex: 1;
-  /* El texto ocupa el espacio disponible */
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 0;
-  /* Elimina márgenes extra */
+  flex: 1;              /* El texto ocupa el espacio disponible */
+  font-size: 18px;
+  text-align: left;     /* Alinea el texto de izquierda a derecha */
+  margin: 0; 
 }
 
 /* Estilos para la imagen */
@@ -204,7 +203,6 @@ h2 {
 }
 
 
-/* FORMACIÓN */
 /* FORMACIÓN */
 .timeline ul {
   padding: 150px 0;
@@ -350,4 +348,8 @@ p {
     border-width: 8px 16px 8px 0;
     border-color: transparent #e85d54 transparent transparent;
   }
+}
+
+#habilidades {
+  margin-top: -200px; /* Ajusta este valor según sea necesario */
 }
