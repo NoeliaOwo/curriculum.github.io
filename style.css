@@ -415,8 +415,6 @@ p {
 }
 
 
-/* PROYECTOS */
-
 #habilidades-no-tecnicas {
   display: flex;
   flex-wrap: wrap;
@@ -500,4 +498,109 @@ background-color: #43ffec;
   margin-bottom: 0px;
 }
 
+#portafolio {
+  display: flex;                  /* Usar Flexbox */
+  flex-direction: column;         /* Apilar los elementos verticalmente */
+  align-items: center;            /* Centrar elementos en el eje horizontal */
+  text-align: center; 
+}
+
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel__slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  color: antiquewhite;
+  background-image: url(https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card__content {
+  padding: 1.5em;
+  background: rgb(187, 120, 217);
+  background: linear-gradient(175deg, rgba(187, 120, 217, 0) 15%, rgba(109, 98, 166, 0.689) 42%);
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+
+.card:hover .card__content,
+.card:focus-within .card__content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.card__title {
+padding: 27px;
+  position: relative;
+  width: max-content;
+}
+
+
+
+.card:hover .card__title::after,
+.card:focus-within .card__title::after {
+  transform: scaleX(1);
+}
+
+.button__negro {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+  padding: 0.5em 1.25em;
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.button__negro:hover,
+.button__negro:focus,
+.button__negro:active {
+  background-color: #32e769;
+  color: #000000;
+}
+
+.carousel__button {
+color: black;
+background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
+}
 

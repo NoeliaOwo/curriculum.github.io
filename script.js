@@ -55,3 +55,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   })();
   
+
+  const track = document.querySelector('.carousel__track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.carousel__button--right');
+  const prevButton = document.querySelector('.carousel__button--left');
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  
+  let currentIndex = 0;
+  
+  // Coloca cada slide al lado del anterior
+  const setSlidePosition = (slide, index) => {
+      slide.style.left = slideWidth * index + 'px';
+  }
+  
+  slides.forEach(setSlidePosition);
+  
+  // Mueve a la siguiente slide
+  const moveToSlide = (track, currentSlide, targetSlide) => {
+      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+      currentIndex = slides.indexOf(targetSlide);
+  }
+  
+  // Maneja el botón siguiente
+  nextButton.addEventListener('click', () => {
+      const currentSlide = slides[currentIndex];
+      const nextSlide = slides[(currentIndex + 1) % slides.length];
+      moveToSlide(track, currentSlide, nextSlide);
+  });
+  
+  // Maneja el botón anterior
+  prevButton.addEventListener('click', () => {
+      const currentSlide = slides[currentIndex];
+      const prevSlide = slides[(currentIndex - 1 + slides.length) % slides.length];
+      moveToSlide(track, currentSlide, prevSlide);
+  });
+  
