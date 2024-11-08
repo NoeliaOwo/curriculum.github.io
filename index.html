@@ -499,7 +499,8 @@
 
     <section id="habilidades">
         <h2>Habilidades</h2>
-        <svg viewBox="-50 0 600 600">
+        
+        <svg class="habilidad" viewBox="-50 0 600 100">
             <!-- Estrellas de fondo -->
             <g opacity="0.5">
               <circle cx="30" cy="20" r="0.8" fill="white"/>
@@ -515,7 +516,7 @@
             </g>
           
             <!-- Texto Java -->
-            <text x="20" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">Java</text>
+            <text x="38" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">Java</text>
           
             <!-- Planetas activos (5/5) con más espacio entre ellos -->
             <g>
@@ -551,12 +552,466 @@
                 <animate attributeName="r" values="18;20;18" dur="3.5s" repeatCount="indefinite"/>
               </circle>
           
-              <!-- Planeta 5 -->
-              <circle cx="420" cy="50" r="15" fill="url(#gradientActive)">
-                <animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/>
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+
+
+         
+        <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto Python -->
+            <text x="20" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">Python</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
               </circle>
-              <circle cx="420" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
                 <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 4 -->
+              <circle cx="340" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.95;1;0.95" dur="4.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="340" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+          
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+          <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto Visual Basic-->
+            <text x="-18" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">Visual Basic</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+
+
+          <svg class="habilidad" viewBox="-50 0 600 150">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto C -->
+            <text x="60" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">C</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+
+
+
+
+
+          <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto HTML -->
+            <text x="25" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">HTML</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 4 -->
+              <circle cx="340" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.95;1;0.95" dur="4.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="340" cy="50" r="18" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+          
+
+                  <!-- Planeta 5 -->
+    <circle cx="420" cy="50" r="15" fill="url(#gradientActive)">
+        <animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="420" cy="50" r="18" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#2ECC71"/>
+                <stop offset="100%" stop-color="#27AE60"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2ECC71" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#27AE60" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+
+
+         
+        <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto CSS -->
+            <text x="40" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">CSS</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 4 -->
+              <circle cx="340" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.95;1;0.95" dur="4.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="340" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+          
+                  <!-- Planeta 5 -->
+    <circle cx="420" cy="50" r="15" fill="url(#gradientActive)">
+        <animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="420" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+          <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto XML-->
+            <text x="35" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">XML</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 4 -->
+              <circle cx="340" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.95;1;0.95" dur="4.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="340" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3.5s" repeatCount="indefinite"/>
               </circle>
             </g>
           
@@ -580,6 +1035,73 @@
           </svg>
 
 
+
+
+          <svg class="habilidad" viewBox="-50 0 600 100">
+            <!-- Estrellas de fondo -->
+            <g opacity="0.5">
+              <circle cx="30" cy="20" r="0.8" fill="white"/>
+              <circle cx="80" cy="70" r="0.8" fill="white"/>
+              <circle cx="150" cy="30" r="0.8" fill="white"/>
+              <circle cx="200" cy="80" r="0.8" fill="white"/>
+              <circle cx="250" cy="40" r="0.8" fill="white"/>
+              <circle cx="300" cy="60" r="0.8" fill="white"/>
+              <circle cx="350" cy="25" r="0.8" fill="white"/>
+              <circle cx="120" cy="50" r="1.2" fill="white"/>
+              <circle cx="280" cy="30" r="1.2" fill="white"/>
+              <circle cx="180" cy="70" r="1.2" fill="white"/>
+            </g>
+          
+            <!-- Texto LATEX -->
+            <text x="20" y="50" fill="white" font-family="Arial" font-size="16" font-weight="bold">LATEX</text>
+          
+            <!-- Planetas activos (5/5) con más espacio entre ellos -->
+            <g>
+              <!-- Planeta 1 -->
+              <circle cx="100" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 2 -->
+              <circle cx="180" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="180" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+          
+              <!-- Planeta 3 -->
+              <circle cx="260" cy="50" r="15" fill="url(#gradientActive)">
+                <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="260" cy="50" r="18" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+                <animate attributeName="r" values="18;20;18" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+          
+
+            </g>
+          
+            <!-- Línea conectora con brillo -->
+            <path d="M100 50 Q180 60 260 50 T420 50" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+          
+            <!-- Definiciones de gradientes -->
+            <defs>
+              <!-- Gradiente para planetas activos -->
+              <radialGradient id="gradientActive">
+                <stop offset="0%" stop-color="#FF6B6B"/>
+                <stop offset="100%" stop-color="#FF4757"/>
+              </radialGradient>
+              
+              <!-- Gradiente para la línea -->
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#FF4757" stop-opacity="0.7"/>
+              </linearGradient>
+            </defs>
+          </svg>
 
     </section>
 
