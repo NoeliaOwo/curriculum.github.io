@@ -173,7 +173,7 @@ h2 {
   /* Alinea verticalmente el texto y la imagen */
   gap: 100px;
   /* Espacio entre el texto y la imagen */
-  padding: 35px 90px;
+  padding: 50px 100px;
 }
 
 /* Estilos para el texto */
@@ -182,16 +182,6 @@ h2 {
   font-size: 18px;
   text-align: left;     /* Alinea el texto de izquierda a derecha */
   margin: 0; 
-}
-
-/* Estilos para la imagen */
-.sobre-contenido img {
-  width: 200px;
-  /* Tamaño de la imagen */
-  height: auto;
-  border-radius: 10px;
-  /* Bordes redondeados en la imagen */
-
 }
 
 .aficiones {
@@ -364,9 +354,150 @@ p {
   }
 }
 
+
+
+/* HABILIDADES */
+
 #habilidades {
   margin-top: -200px; /* Ajusta este valor según sea necesario */
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 60px;
+}
+
+.section-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.skill-circle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, #fff, transparent 70%);
+  opacity: 0.2;
+}
+
+.skill-name {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* PROYECTOS */
+
+#habilidades-no-tecnicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre columnas */
+}
+
+.habilidad-columna {
+  flex: 1 1 calc(25% - 20px); /* Ajusta el ancho */
+  box-sizing: border-box;
+  min-width: 200px;
+  border: 2px solid #43ffec; /* Color de la línea */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.habilidad-detalles {
+  padding: 15px; /* Espaciado interno */
+  text-align: center; /* Centrado opcional */
+}
+
+.habilidad-columna .habilidad-detalles .habilidad-detalles--inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+.habilidad-detalles .habilidad-detalles--inner .card-icon {
+  position: relative;
+  max-width: 70px;
+  max-height: 50px;
+}
+.habilidad-detalles .habilidad-detalles--inner .card-icon img{
+  transition: all 0.5s ease-in-out;
+}
+.habilidad-detalles .habilidad-detalles--inner .card-heading{
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.habilidad-detalles .habilidad-detalles--inner .card-heading a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.habilidad-detalles .habilidad-detalles--inner .card-heading:after{
+content: '';
+width: 67px;
+height: 1px;
+display: inline-block;
+background-color: rgba(255, 255, 255, 0.10);
+transition: all 0.5s ease-in-out;
+}
+.habilidad-columna .habilidad-detalles:hover .card-heading:after,
+.habilidad-columna .habilidad-detalles:active .card-heading:after{
+width: 100%;
+background-color: #43ffec;
+}
+
+.habilidad-detalles .habilidad-detalles--inner .card-decription{
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+  color: #DDDDDC;
+}
+
+.habilidad-detalles .habilidad-detalles--inner .card-count{
+  font-family: "DM Sans", ui-sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: right;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.20);
+  -webkit-text-fill-color: transparent;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 
