@@ -399,16 +399,11 @@ p {
 .cv-body-background {
   font-family: 'Inter', system-ui,  sans-serif;
   color: #1e293b;
-  line-height: 1.7;
-  min-height: 100vh;
-  padding: 2rem;
-  background-attachment: fixed;
 }
 
 .cv-main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -1068,6 +1063,9 @@ h3::after {
   background-image: url('ISI.png'); /* Imagen para TuriStatSP */
 }
 
+.slide-pokem {
+  background-image: url('IPO.webp'); /* Imagen para TuriStatSP */
+}
 /* Contactos */
 
 .container-contactos {
