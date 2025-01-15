@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noelia</title>
+    <link rel="icon" type="image/png" sizes="20x20" href="archivos/iconoFinal.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -13,8 +14,8 @@
 <body>
 
     <nav class="navbar">
-
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul id="menu">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre">Sobre mí</a></li>
             <li><a href="#formacion">Formación</a></li>
@@ -23,7 +24,6 @@
             <li><a href="#portafolio">Portafolio</a> </li>
             <li><a href="#contactos">Contactos</a></li>
         </ul>
-
     </nav>
 
 
@@ -33,11 +33,10 @@
                 <h1>Hola,<br>Soy <span class="name">Noelia</span></h1>
                 <p class="description">Futura ingeniera informática :D
                     ¡Lista para enfrentar nuevos desafíos!</p>
-                <a href="CV NOELIA.pdf" class="download-btn" target="_blank">Descargar CV ↓</a>
+                <a href="archivos/CV NOELIA.pdf" class="download-btn" target="_blank">Descargar CV ↓</a>
             </div>
             <div class="image-container">
-                <!--<img src="foto-principal.jpg" alt="Foto de perfil" class="profile-img">-->
-                
+                <img src="archivos/foto-principal.jpg" alt="Foto de perfil" class="profile-img">
             </div>
         </div>
     </section>
@@ -53,18 +52,22 @@
             <div class="content">
                 <div class="main-content">
                     <p>
-                        Desde que era pequeña, siempre me ha fascinado el ámbito de la <span class="highlight">tecnología</span>.
-                        Sin embargo, mi interés comenzó a despertar gracias a mi primo, que es informático y a mi hermana. Ver su
-                        <span class="highlight">entusiasmo</span> por aprender me inspiró mucho. Fue por ellos dos que decidí adentrarme en este campo. 
-                        Desde entonces, me he esforzado por <span class="highlight">mejorar</span> día a día. 
-
+                        Desde que era pequeña, siempre me ha fascinado el ámbito de la <span
+                            class="highlight">tecnología</span>.
+                        Sin embargo, mi interés comenzó a despertar gracias a mi primo, que es informático, y a mi
+                        hermana. Ver su
+                        <span class="highlight">entusiasmo</span> por aprender me inspiró mucho. Fue por ellos dos que
+                        decidí adentrarme en este campo.
+                        Desde entonces, me he esforzado por <span class="highlight">mejorar</span> día a día.
                     </p>
 
                     <p>
-                        LLevo en la carrera tres años y estoy cursando la especialidad <span class="highlight"> Tecnologías de la Información</span>. También formo
-                        parte de la <span class="highlight">Delegación de Alumnos</span> pertenezco al área de RRSS. Con el paso del tiempo, me he dado 
-                        cuenta de que la tecnología no solo es una herramienta, sino algo que me motiva a <span class="highlight">seguir aprendiendo</span>.
-
+                        Llevo en la carrera tres años y estoy cursando la especialidad <span
+                            class="highlight">Tecnologías de la Información</span>.
+                        También formo parte de la <span class="highlight">Delegación de Alumnos</span>, donde pertenezco
+                        al área de RRSS. Con el paso del tiempo, me he dado
+                        cuenta de que la tecnología no solo es una herramienta, sino algo que me motiva a <span
+                            class="highlight">seguir aprendiendo</span>.
                     </p>
                 </div>
 
@@ -77,7 +80,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            Villafranca De Los Caballeros, España
+                            Villafranca de los Caballeros, España
                         </span>
                     </div>
 
@@ -96,13 +99,15 @@
                     <div class="info-item">
                         <span class="info-label">TELÉFONO</span>
                         <span class="info-value">
-                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
                             </svg>
                             +XX (XXX) XXX-XXXX
                         </span>
                     </div>
-
                 </aside>
             </div>
         </div>
@@ -120,41 +125,41 @@
                     <li>
                         <div>
                             <time>2015-2019 Educación secundaria</time>
-                            <p> IES La Falcata en Villafranca De Los Caballeros, España</p>
+                            <p> IES La Falcata en Villafranca de los Caballeros</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <time>2019-2021 Bachillerato Tecnológico</time>
-                            <p>IES Miguel de Cervantes Saavedra en Alcazar de San Juan, España</p>
+                            <p>IES Miguel de Cervantes Saavedra en Alcazar de San Juan</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <time>2021-Actual Grado en Ingeniería Informática 
+                            <time>2021-Actual Grado en Ingeniería Informática
                             </time>
-                            <p> ESI de la Universidad de Castilla-La Mancha en Ciudad Real, España</p>
+                            <p> ESI de la Universidad de Castilla-La Mancha en Ciudad Real</p>
                         </div>
                     </li>
                 </ul>
             </div>
-
-
         </div>
     </section>
-        <section id="cursos">
-            <div class="container">
+
+
+    <section id="cursos">
+        <div class="container">
             <header class="header-sobre">
                 <h2 class="title">CERTIFICADOS</h2>
                 <div class="divider"></div>
                 <h2 class="subtitle">¿Qué me ha dejado huella?</h2>
             </header>
         </div>
-        <div class="cv-body-background">
+
 
         <div class="cv-main-container">
 
-    
+
             <!-- Workshops Section -->
             <section class="cv-content-section">
                 <h2 class="cv-section-title">
@@ -176,7 +181,7 @@
                     </div>
                 </div>
             </section>
-    
+
             <!-- Talks Section -->
             <section class="cv-content-section">
                 <h2 class="cv-section-title">
@@ -207,7 +212,7 @@
                 </div>
             </section>
         </div>
-    </div>
+
     </section>
 
     <section id="habilidades">
@@ -403,7 +408,7 @@
                 </div>
             </section>
         </div>
-       
+
 
         <div class="container-habilidades">
             <div class="habilidades-grid">
@@ -482,19 +487,21 @@
         </div>
 
         <div class="carousel">
-            <div class="carousel__track">
+            <div class="carouselTrack">
                 <div class="carousel__slide slide-ice">
                     <div class="card">
                         <div class="card__content">
                             <h2 class="card__title">IceDrive Authentication Service</h2>
-                            <p class="card__body">El proyecto IceDrive Authentication Service es una aplicación para gestionar la autenticación de usuarios, 
-                                que permite crear, eliminar y verificar usuarios. Se centra en garantizar la validez de las credenciales mediante controles 
-                                automáticos, como la expiración de credenciales tras un tiempo definido y la posibilidad de renovarlas en 
+                            <p class="card__body">El proyecto IceDrive Authentication Service es una aplicación para
+                                gestionar la autenticación de usuarios,
+                                que permite crear, eliminar y verificar usuarios. Se centra en garantizar la validez de
+                                las credenciales mediante controles
+                                automáticos, como la expiración de credenciales tras un tiempo definido y la posibilidad
+                                de renovarlas en
                                 caso necesario.
-
-
                             </p>
-                            <a href="https://github.com/NoeliaOwo/SDLab_Noelia" class="button__github" target="_blank">Mi GitHub</a>
+                            <a href="https://github.com/NoeliaOwo/SDLab_Noelia" class="button__github"
+                                target="_blank">Mi GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -502,10 +509,16 @@
                     <div class="card">
                         <div class="card__content">
                             <h2 class="card__title">ISOspita</h2>
-                            <p class="card__body">El proyecto ISOspita es un sistema teórico de gestión hospitalaria, dividido en varios módulos: 
-                                presentación (interfaz de usuario), dominio (lógica del negocio) y persistencia (conexión con la base de datos). 
-                                Incluye un archivo ejecutable (ISOspital.jar) y scripts SQL para configurar la base de datos. </p>
-                            <a href="https://github.com/NoeliaOwo/ISoTrabajoFinal" class="button__github" target="_blank">Mi GitHub</a>
+                            <p class="card__body">El proyecto ISOspita es un sistema de gestión hospitalaria, dividido
+                                en varios módulos:
+                                presentación, dominio y persistencia. Incluye un archivo ejecutable y scripts SQL para
+                                configurar la base de datos.
+                                Permite a doctores y administradores gestionar procesos clínicos y administrativos.
+                                Los doctores podrán realizar diagnósticos médicos y actualizar el historial clínico del
+                                paciente.
+                                Los administrativos podrán añadir o cancelar citas.</p>
+                            <a href="https://github.com/NoeliaOwo/ISoTrabajoFinal" class="button__github"
+                                target="_blank">Mi GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -513,11 +526,15 @@
                     <div class="card">
                         <div class="card__content">
                             <h2 class="card__title">TuriStatSP</h2>
-                            <p class="card__body">El proyecto TuriStatSp consiste en desarrollar un sistema de información turística para analizar 
-                                y presentar datos sobre la afluencia de turistas en España. Incluye la implementación de dos APIs para acceder a fuentes 
-                                externas, la creación de una base de datos para gestionar la información y el desarrollo de una aplicación web interactiva 
+                            <p class="card__body">El proyecto TuriStatSp consiste en desarrollar un sistema de
+                                información turística para analizar
+                                y presentar datos sobre la afluencia de turistas en España. Incluye la implementación de
+                                dos APIs para acceder a fuentes
+                                externas, la creación de una base de datos para gestionar la información y el desarrollo
+                                de una aplicación web interactiva
                                 que permita visualizar y explorar los datos recopilados.</p>
-                            <a href="https://github.com/NoeliaOwo/isi-TuriStatSP" class="button__github" target="_blank">Mi GitHub</a>
+                            <a href="https://github.com/NoeliaOwo/isi-TuriStatSP" class="button__github"
+                                target="_blank">Mi GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -526,20 +543,24 @@
                     <div class="card">
                         <div class="card__content">
                             <h2 class="card__title">IPOkemon</h2>
-                            <p class="card__body">El proyecto IPOkemon consiste en desarrollar una aplicación UWP con temática de Pokémon. Tiene una Pokédex funcional que 
-                                permite gestionar una colección de Pokémons, con información detallada sobre cada uno. Incluye herramientas de búsqueda y filtrado para facilitar 
-                                la búsqueda de cada pokemon. Presenta un sistema de combates y diseño adaptado a Fluent Design para Windows 10. También integra características, 
+                            <p class="card__body">El proyecto IPOkemon consiste en desarrollar una aplicación UWP con
+                                temática de Pokémon. Tiene una Pokédex funcional que
+                                permite gestionar una colección de Pokémons, con información detallada sobre cada uno.
+                                Incluye herramientas de búsqueda y filtrado para facilitar
+                                la búsqueda de cada pokemon. Presenta un sistema de combates y diseño adaptado a Fluent
+                                Design para Windows 10. También integra características,
                                 como notificaciones y Live Tiles.
                             </p>
-                            <a href="https://github.com/NoeliaOwo/IPO2_Proyecto_Conjunto" class="button__github" target="_blank">Mi GitHub</a>
+                            <a href="https://github.com/NoeliaOwo/IPO2_Proyecto_Conjunto" class="button__github"
+                                target="_blank">Mi GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Agrega más tarjetas según sea necesario -->
             </div>
-            <button id= "button-portafolio" class="carousel__button carousel__button--left">&#10094;</button>
-            <button id= "button-portafolio" class="carousel__button carousel__button--right">&#10095;</button>
+            <button id="button-portafolio" class="carousel__button carousel__button--left">&#10094;</button>
+            <button id="button-portafolio" class="carousel__button carousel__button--right">&#10095;</button>
         </div>
 
         <script src="./script.js"></script>
@@ -567,13 +588,25 @@
                         <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
                         <label for="message">Mensaje</label>
                     </div>
-                    <button class="button-enviar "type="submit">
+                    <button class="button-enviar " type="submit">
                         Enviar
                         <div class="loading"></div>
                     </button>
                     <div class="form-message" id="formMessage"></div>
                 </form>
             </div>
+            <!-- Incluye la librería de EmailJS -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init({
+                        publicKey: "5v2HyQ_2TvaYr7Fsy",
+                    });
+                })();
+            </script>
+
+            <!-- Conecta el archivo script.js -->
             <script src="script.js"></script>
         </div>
         <div class="social-links">
@@ -583,35 +616,26 @@
                     <i class="fab fa-instagram"></i>
                     <svg class="instagram-svg" viewBox="0 0 24 24">
                         <path
-                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        />
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/noelia-d%C3%ADaz-alejo-alejo-580994297/" class="social-icon linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/noelia-d%C3%ADaz-alejo-alejo-580994297/"
+                    class="social-icon linkedin" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                     <svg class="linkedin-svg" viewBox="0 0 24 24">
                         <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
-                        />
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
                     </svg>
                 </a>
                 <a href="https://github.com/NoeliaOwo/" class="social-icon github" target="_blank">
                     <i class="fab fa-github"></i>
                     <svg class="github-svg" viewBox="0 0 24 24">
                         <path
-                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                        />
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
                     </svg>
                 </a>
-                <a href="mailto:noeliadiaz894n@gmail.com" class="social-icon email">
-                    <i class="fab fa-email"></i>
-                    <svg class="email-svg" viewBox="0 0 24 24">
-                        <path
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                    </svg>
-                </a>
-                
+
+
             </div>
 
 

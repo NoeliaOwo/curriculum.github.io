@@ -1,3 +1,52 @@
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const menuItems = menu.querySelectorAll('a');
+
+    // Toggle the menu when clicking the menu toggle button
+    menuToggle.addEventListener('click', function () {
+      menu.classList.toggle('open');
+    });
+
+    // Close the menu when any menu item is clicked
+    menuItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        menu.classList.remove('open');
+      });
+    });
+  });
+
+  // Smooth scrolling functionality for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent the default anchor action
+
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      const targetPosition = targetElement.offsetTop;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 400; // Duration in milliseconds (2 seconds)
+      let startTime = null; // Ensure to use a unique name for the start variable
+
+      window.requestAnimationFrame(function step(timestamp) {
+        if (!startTime) startTime = timestamp; // Initialize the start time
+        const progress = timestamp - startTime;
+        const progressPercentage = Math.min(progress / duration, 1);
+        window.scrollTo(0, startPosition + distance * progressPercentage);
+
+        // Keep animating until the duration is met
+        if (progress < duration) {
+          window.requestAnimationFrame(step);
+        }
+      });
+    });
+  });
+})();
+
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -56,7 +105,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })();
 
 
-const track = document.querySelector('.carousel__track');
+const track = document.querySelector('.carouselTrack');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
@@ -113,45 +162,49 @@ document.querySelectorAll('.skills-section').forEach(section => {
   observer.observe(section);
 });
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
 
-  const form = this;
-  const messageDiv = document.getElementById('formMessage');
-  const submitButton = form.querySelector('button[type="submit"]');
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
 
-  // Mostrar estado de carga
-  submitButton.classList.add('sending');
-  messageDiv.className = 'form-message';
+  // Reemplaza con tus credenciales de EmailJS
+  const serviceID = "service_4qg18tj";
+  const templateID = "template_952udl7";
+  const userID = "5v2HyQ_2TvaYr7Fsy";
 
-  // Recoger los datos del formulario
-  const formData = new FormData(form);
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault(); // Evita que se recargue la página
 
-  // Enviar los datos al servidor
-  fetch('send_mail.php', {
-    method: 'POST',
-    body: formData
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        messageDiv.textContent = '¡Mensaje enviado con éxito!';
-        messageDiv.className = 'form-message success';
-        form.reset();
-      } else {
-        throw new Error(data.message || 'Error al enviar el mensaje');
-      }
-    })
-    .catch(error => {
-      messageDiv.textContent = error.message;
-      messageDiv.className = 'form-message error';
-    })
-    .finally(() => {
-      submitButton.classList.remove('sending');
-      setTimeout(() => {
-        messageDiv.className = 'form-message';
-      }, 3000);
-    });
+    // Muestra el indicador de carga
+    const loadingIndicator = contactForm.querySelector(".loading");
+    loadingIndicator.style.display = "inline-block";
+
+    // Obtén los valores del formulario
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    try {
+      // Llama a EmailJS para enviar el correo
+      const response = await emailjs.send(serviceID, templateID, {
+        email: email,
+        message: message,
+      }, userID);
+
+      // Muestra un mensaje de éxito
+      formMessage.textContent = "¡Mensaje enviado con éxito!";
+      formMessage.style.color = "green";
+      contactForm.reset();
+    } catch (error) {
+      // Muestra un mensaje de error
+      formMessage.textContent = "Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente.";
+      formMessage.style.color = "red";
+      console.error("Error al enviar el mensaje:", error);
+    } finally {
+      // Oculta el indicador de carga
+      loadingIndicator.style.display = "none";
+    }
+  });
 });
+
 
 
