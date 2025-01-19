@@ -24,7 +24,8 @@
       e.preventDefault(); // Prevent the default anchor action
 
       const targetElement = document.querySelector(this.getAttribute('href'));
-      const targetPosition = targetElement.offsetTop;
+      const headerHeight = document.querySelector('header').offsetHeight; // Ajusta el selector según tu encabezado
+      const targetPosition = targetElement.offsetTop - headerHeight;
       const startPosition = window.pageYOffset;
       const distance = targetPosition - startPosition;
       const duration = 400; // Duration in milliseconds (2 seconds)
@@ -47,28 +48,6 @@
 
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const targetElement = document.querySelector(this.getAttribute('href'));
-    const targetPosition = targetElement.offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 400; // Duración en milisegundos (2 segundos)
-    let start = null;
-
-    window.requestAnimationFrame(function step(timestamp) {
-      if (!start) start = timestamp;
-      const progress = timestamp - start;
-      const progressPercentage = Math.min(progress / duration, 1);
-      window.scrollTo(0, startPosition + distance * progressPercentage);
-      if (progress < duration) {
-        window.requestAnimationFrame(step);
-      }
-    });
-  });
-});
 
 (function () {
 
